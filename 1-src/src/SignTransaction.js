@@ -21,14 +21,11 @@ export const SignTransaction = () => {
     };
 
     const handleSign = async () => {
-        console.log(
-            user
-        );
         const signingAccount = user.chainAccounts.find(
             (ca) => ca.chainNetwork ===  chainNetwork
         );
     
-        const errorMsg = `User doesn not have any accounts on ${chainNetwork}`
+        const errorMsg = `User doesn't not have any accounts on ${chainNetwork}`;
     
         if (!signingAccount) {
             console.log( errorMsg );
