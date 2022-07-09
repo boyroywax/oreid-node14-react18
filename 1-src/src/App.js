@@ -31,9 +31,6 @@ const AppWithProvider = () => {
 	const isLoggedIn = useIsLoggedIn()
 	return (
 		<div>
-			{/* The following if statement will display */}
-			{/* the logged in status of the user. The login */}
-      {/* page will be shown if the user is logged out. */}
       {isLoggedIn ? 
         <div>
           <SignTransaction />
